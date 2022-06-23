@@ -14,7 +14,7 @@ const readFile = promisify(fs.readFile)
 const { DockerfileParser } = require('dockerfile-ast')
 const { extend, globalAgent } = jest.requireActual('@gardener-dashboard/request')
 const client = extend({
-  prefixUrl: 'https://raw.githubusercontent.com/nodejs/docker-node/main/'
+  url: 'https://raw.githubusercontent.com/nodejs/docker-node/main/'
 })
 
 /* Nodejs release schedule (see https://nodejs.org/en/about/releases/) */
